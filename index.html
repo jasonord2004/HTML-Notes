@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Notes</title>
+</head>
+<body>
+<h1>Coursera -- Test 1</h1>
+<heading>These are my HTML notes from Coursera.</heading>
+<h2 id = "top">HTML Notes:</h2> 
+<div>
+	<h3>Table of Contents:</h3>
+	<p>
+		<a href = "#htmlTags"><div>HTML Tags</div></a>
+		<a href = "#htmlStructure"><div>Basic HTML Document Structure</div></a>
+		<a href = "#htmlContentModels"><div>HTML Content Models</div></a>
+		<a href = "#htmlElements"><div>Semantic HTML Elements</div></a>
+		<a href = "#htmlLists"><div>HTML Lists</div></a>
+		<a href = "#htmlCharacterEntityRef"><div>3 Characters You Should Always Escape</div></a>
+		<a href = "#htmlLinkCreation"><div>Creating Links</div></a>
+		<a href = "#bottom"><div>To the Bottom:</div></a>
+	</p>
+</div>
+<p id = "htmlTags"> <hr>
+	<h3>HTML Tags: </h3>
+	Paragraph: "< p >" <br>
+	<ul>
+		<li> Must have an Opening tag, and usually a Closing tag, and surround some content.</li>
+		<li>"p" by itself is an element, but is interchangablely used with tag. </li>
+	</ul>
+	Some tags are only opening tags such as: <br>
+	<ul>
+		<li>Line Break: "< br >" </li>
+		<li>Horizontal Rule: "< hr >" </li>
+	</ul>
+	Every HTML element has predefined attributes. <br>
+	Attributes are a name value pair that is a meta data for the element it is assigned to. <br>
+	No other element on the webpage is allowed to have that id attribute. <br>
+	Example: <br>
+	<ul>
+		<li>"< p id="myID"> < /p >" </li>
+		<li>id is the Attribute Name </li>
+		<li>myID is the Attribute Value </li>
+	</ul>
+
+	No spaces between the opening/ending bracket and the element name. Spaces inside are ignored. <br><br>
+
+	Quotes within quotes: both single quotes (') and double quotes (") can be used, and can be nested, as long as they are closed. <br><br>
+
+	"Self-closing" tag: in other versions of HTML, there were "self-closing" tags that could be used as empty place holders to dynamically insert data later on. "< p/ >" <br><br>
+	However, in HTML5, "self-closing" is illegal. Instead, just have the opening and closing tags with no space in-between to create the same affect. "< p >< /p >" <br>
+</p> <hr>
+<p id = "htmlStructure"> 
+	<h3>Basic HTML Document Structure: </h3> 
+
+	"< !doctype html >" <br>
+	Every HTML page should begin with the "< !doctype html >" declaration. <br>
+	<ul>
+		<li>This can be written in lower or upper case. No spaces between the "<" symbol and "!" </li>
+		<li> This is a necessary part since it tells the browser that your page is following standard HTML declaration. </li>
+	</ul>
+
+	"< html >< /html >" <br>
+	Next is the html tag that encompasses the entire html document. <br><br>
+
+	"< head >< /head >" <br>
+	Then the head tag, which contians the main content of the page such as the page title, author description, and etc. <br>
+	<ul>
+		"< meta charset="utf-8" >" <br>
+		<li>Inside the head tag, is the meta tag, to specify the character set. This will let the browser know how to interpret the content of the webpage. Commonly used is UTF-8. </li>
+		<li>It is a stand-alone tag. </li><br>
+		"< title >. . .< /title >" <br>
+		<li>The title tag is a necessary tag. Without it, the HTML code would be invalid. </li>
+	</ul>
+
+	"< body >. . .</ body >" <br>
+	After the head tag is the body tag. This is the root of all content that is visible by the user (aka the viewport). <br><br>
+
+	**Important Rule: You must close the last opened tag before closing its parent's tag. Or else it the html is invalid. <br><br>
+
+	HTML is read from the top down sequentially by the browser. <br>
+</p><hr>
+<p id = "htmlContentModels">
+	<h3>HTML Content Models: </h3>
+	Content Model -- the full behavior the browser applies to the elements within the content model, and which elements are allowed to be nested inside which elements. <br><br>
+
+	Generally split into 2 categories: 
+	<ul>
+		<li>Block-Level Elements</li>
+		<li>InLine Elements</li>
+	</ul>
+	HTML5 split these categories into 7 different models. <br><br>
+
+	Block-Level Elements: 
+	<ul>
+		<li>The browser automatically places the element on a new line in the flow of the document (by default)</li>
+		<li>May contain inline or other block-level elements within the element</li>
+	</ul>
+
+	Inline Elements: 
+	<ul>
+		<li>The browser automatically places the element on the same line (by default), as if there was no new line character present</li>
+		<li>May only contain other inline elements</li>
+	</ul>
+
+	Although HTML5 replaces the 2 categories, the distinction between elements is still practical since it aligns with current existing CSS rules. <br><br>
+
+	"< div >" <br>
+	The div tag stands for a division. It is your most generic block level element. 
+	<br><br>
+
+	"< span >" <br>
+	The span tag stands for span. It is your most generic inline element.
+	<br><br>
+</p><hr>
+<p id = "htmlElements">
+	<h3>Semantic HTML Elements:</h3>
+	<div> Semantic -- relating to meaning in lnaguage or logic <br>
+	Semantic HTML Element -- an element that implies some meaning to the content </div>
+
+	<br>Heading Example:
+	<h1>MAIN HEADING 1</h1>
+	<h2>SUBHEADING 2</h2>
+	<h3>SUBHEADING 3</h3>
+	This shows that the most important headings start from h1. This will make it easier for SEO (Site Engine Optimization)<br>
+
+	<header>The following tags are all block-line elements.</header><br>
+
+	<section>"< header >" </section>
+	<article>Contains header information about the page. Perhaps logos, navigation, etc.</article><br>
+
+	<section>"< nav >" </section>
+	<article>Usually contains links to different parts of the web site to navigate.</article><br>
+
+	<section>"< section >" </section>
+	<article>Acts like a div tag. Generally holds inline elements such as article tags.</article><br>
+
+	<section>"< article >" </section>
+	<article>Acts like a span tag. However, it can hold section tags.</article><br>
+
+	<section>"< aside >" </section>
+	<article>Contains some information that is generally related to the main topic of the site.</article><br>
+
+	<section>"< footer >" </section>
+	<article>Contains the footer information. Perhaps copyright and contact info.</article><br>
+
+	These types of semantic elements allow for more meaningful breakdowns of an html page. However they do not add much functionality when compared to "< div >" and "< span >" tags. 
+	<br><br>
+</p><hr>
+<p id = "htmlLists">
+	<h3>HTML Lists</h3>
+	<section>"< ul >"</section>
+	<article>Represents an unordered list tag. Every element within the ul tag is an "li" tag (list item).</article>
+	<article>Example: 
+		<ul>
+			<li>Milk</li>
+			<li>Donuts</li>
+			<li>Cookies
+				<ul>
+					<li>Chocolate</li>
+					<li>Sugar</li>
+					<li>Peanut Butter</li>
+				</ul>
+			</li> 
+			<li>Pepto Bismol</li>
+		</ul>
+	</article>
+
+	<section>"< ol >"</section>
+	<article>Represents an ordered list tag. Every element within the ul tag is an "li" tag (list item).</article>
+	<article>Example: 
+		<ol>
+			<li>Milk</li>
+			<li>Donuts</li>
+			<li>Cookies
+				<ol>
+					<li>Chocolate</li>
+					<li>Sugar</li>
+					<li>Peanut Butter</li>
+				</ol>
+			</li> 
+			<li>Pepto Bismol</li>
+		</ol>
+	</article>
+</p> <hr>
+<p id = "htmlCharacterEntityRef">
+	<h3> 3 Characters You Should Always Escape </h3>
+	<div>To let the computer differentiate which characters are part of the HTML syntax and which characters are actually part of the desired information.<div><br>
+	<section> " < " </section>
+	<article>Instead of the less than symbol use: "&lt;"</article>
+	<section> " > " </section>
+	<article>Instead of the less than symbol use: "&gt;"</article>
+	<section> " & " </section>
+	<article>Instead of the less than symbol use: "&amp;"</article>
+	<br>
+	<h3> Other important HTML Character Entity References </h3>
+	<section> Copyright Symbol: </section>
+	<article>The copyright symbol can be found with: "&copy;"</article>
+	<section> Non-breaking Space </section>
+	<article>To add a non-breaking space (to prevent certain words from being split apart when viewing) use: "word1&nbsp;word2&nbsp;word3"</article>
+	<section> Quotes </section>
+	<article>To add quotes (useful when using other limited character sets) use: " &quot; "</article>
+</p> <hr>
+<p id = "htmlLinkCreation">
+	<h3> Creating Links </h3>
+	<article>To make links, you must first specify an anchor tag, "a" element (&lt;a&gt;) with an attribute of "href" which stands for hypertext reference. </article>
+	<ul>
+		<li>The value of href can either be a relative or an absolute URL.</li>
+		<li>Internal links are all links that point to internal web pages of the web application.</li>
+	</ul>
+	<article>You should also specify a "title" attribute for the a tag. This title attribute will be used to help visually impaired people get through the web page.</article>
+	<br>
+	<article>The content between the a tags are the actual information that you will be able to see in the web page and that you can click.</article>
+	<br>
+	<section>
+		<h4>Internal Links:</h4>
+		<section>
+			<article>You can have links inline.</article>
+			For Example:
+			<a href="htmlBasicStruct.html" title ="same dir link">
+			Linking to a file within the "test_site" folder on this machine.
+			</a>
+		</section>
+		<br>
+		<article>You can also have the link onto a new line by using a div tag around the content that you want to click. The reason why this works is because the a tag is actually both an inline and a block-level element.</article>
+		<section>
+			For Example:
+			<a href="htmlBasicStruct.html" title ="same dir link">
+				<div>Linking with DIV to a file within the "test_site" folder on this machine.</div>
+			</a>
+		</section>
+	</section>
+	<section>
+		<h4>External Links:</h4>
+		<section>
+			<article>The href values in external links usually begin with "http://" because the external links are usually hosted on a different domain other than your website.</article>
+			<article>Addition to the href and title attributes, a tags that lead to external links also have a "target" attribute.
+				<ui>
+					The target attribute, when set to "_blank" forces the browser to open in a new tab or window.
+				</ui>
+			</article>
+			<br>
+			For Example:
+			<a href = "https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/kMmI7/lecture-9-creating-links" target = "_blank" title = "external Coursera link"><div>External link to the Coursera lecture about creating links.<div></a>
+	</section>
+	<section>
+		<h4>Fragment Identifiers:</h4>
+		<section>
+			<article>Fragment Identifiers create links that lead to specific sections of your website. </article>
+			<article>There are multiple ways to identify a section.
+				<ul>
+					<li>You can have any tag that has an id with that section name.</li>
+					<li>You can create an anchor tag with a name attribute (named similarly to section names).</li>
+				</ul>
+			However there are all referenced the same way: The href value must be a # symbol followed by the name of the id.
+			</article>
+			<article>For Example:
+				<a href = "#htmlTags" title = "section1"><div>1st Section</div></a>
+				<a href = "#htmlLinkCreation" title = "section7"><div>7th Section</div></a>
+		</section>
+	</section>
+</p>
+<div>
+	<h2><a name = "bottom">Bottom of page</a></h2>
+	<p>
+		<a href = "#top">Back to the top:</a>
+	</p>
+</div>
+</body>
+</html>
