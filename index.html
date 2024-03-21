@@ -19,6 +19,7 @@
 		<a href = "#htmlLists"><div>HTML Lists</div></a>
 		<a href = "#htmlCharacterEntityRef"><div>3 Characters You Should Always Escape</div></a>
 		<a href = "#htmlLinkCreation"><div>Creating Links</div></a>
+		<a href = "#htmlImages"><div>Displaying Images</div></a>
 		<a href = "#bottom"><div>To the Bottom:</div></a>
 	</p>
 </div>
@@ -212,7 +213,6 @@
 	<article>You should also specify a "title" attribute for the a tag. This title attribute will be used to help visually impaired people get through the web page.</article>
 	<br>
 	<article>The content between the a tags are the actual information that you will be able to see in the web page and that you can click.</article>
-	<br>
 	<section>
 		<h4>Internal Links:</h4>
 		<section>
@@ -260,15 +260,49 @@
 				<a href = "#htmlLinkCreation" title = "section7"><div>7th Section</div></a>
 		</section>
 	</section>
-</p>
+</p><hr>
 <p id = htmlImages>
-	<h4>Displaying Images</h4>
+	<h3>Displaying Images</h3>
 	 <section>
-	 	HTML Comments:
+	 	<h4>HTML Comments:</h4>
 	 	<article>To comment out lines of code in HTML use "&lt;!--" to start it and "-->" to close it.</article>
 	 	<!--This is an example of an HTML commented line.-->
 	 </section>
-	 
+	 <section>
+	 	<h4>HTML Images:</h4>
+	 	<article>Use the "img" tag (&lt;img&mt;) to display images. It is an inline element.</article>
+	 	<article>There are 4 important attributes you should include in an img tag</article>
+	 	<ol>
+	 		<li>"src" tag
+	 			<ul>
+	 				<li>A source tag is similar to an href tag since the url points to the location of an image. This url can be relative or absolute url or even an external url.</li>
+	 			</ul>
+	 		</li>
+	 		<li>"width" tag
+	 			<ul>
+	 				<li>Specifies how wide an image is in pixels.</li>
+	 				<li>Tells the page how many pixels to allocate even if the image takes a long time to load. (This makes the page more visually appealing especially if the image is an external URL)</li>
+	 			</ul>
+	 		</li>
+	 		<li>"height" tag
+	 			<ul>
+	 				<li>Specifies how tall an image is in pixels.</li>
+	 				<li>Tells the page how many pixels to allocate even if the image takes a long time to load. (This makes the page more visually appealing especially if the image is an external URL)</li>
+	 			</ul>
+	 		</li>
+	 		<li>"alt" tag
+	 			<ul>
+	 				<li>An alternate text tag adds text to an image's description to help people with visual impairment.</li>
+	 			</ul>
+	 		</li>
+	 	</ol>
+	 	<section>For Example (Internal Link):
+	 		<img src = "Totoro Image1.png" width = "468" height = "533" alt = "Image of Totoro">
+	 	</section>
+	 	<section>For Example (External Link):
+	 		<img src = "https://static.wixstatic.com/media/919372_e20bfc2f503a419ab3a31b145781297f~mv2.jpg/v1/fill/w_900,h_506,al_c,q_85/919372_e20bfc2f503a419ab3a31b145781297f~mv2.jpg" width = "450" height = "253" alt = "Image of Howl's Moving Castle">
+	 	</section>
+	</section>
 </p>
 <div>
 	<h2><a name = "bottom">Bottom of page</a></h2>
