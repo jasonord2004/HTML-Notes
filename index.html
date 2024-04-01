@@ -4,11 +4,30 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HTML Notes</title>
+	<style>
+		h1 {
+			color: black;
+			font-size: 36px;
+			text-align: center;
+			font-family: monospace;
+		}
+		h2 {
+			color: royalblue;
+			font-size: 25px;
+			font-family: monospace;
+			text-align: left;
+		}
+		h3 {
+			color: #ec7e35;
+			font-size: 20px;
+			font-family: monospace;
+		}
+	</style>
 </head>
 <body>
 <h1>Coursera -- Test 1</h1>
 	<heading>These are my HTML notes from Coursera.</heading>
-<h2 id = "top">HTML Notes:</h2> 
+<h2 id = "top">HTML & CSS Notes:</h2> 
 <div>
 	<h3>Table of Contents:</h3>
 	<p>
@@ -20,7 +39,9 @@
 		<a href = "#htmlCharacterEntityRef"><div>3 Characters You Should Always Escape</div></a>
 		<a href = "#htmlLinkCreation"><div>Creating Links</div></a>
 		<a href = "#htmlImages"><div>Displaying Images</div></a>
+		<a href = "#cssIntro"><div>CSS Rules</div></a>
 		<a href = "#bottom"><div>To the Bottom:</div></a>
+
 	</p>
 </div>
 <p id = "htmlTags"> <hr>
@@ -302,6 +323,27 @@
 	 	<section>For Example (External Link):
 	 		<img src = "https://static.wixstatic.com/media/919372_e20bfc2f503a419ab3a31b145781297f~mv2.jpg/v1/fill/w_900,h_506,al_c,q_85/919372_e20bfc2f503a419ab3a31b145781297f~mv2.jpg" width = "450" height = "253" alt = "Image of Howl's Moving Castle">
 	 	</section>
+	</section>
+</p><hr>
+<p id = cssIntro>
+	<h3> CSS Rules </h3>
+	<section>
+		<article>Associates CSS rules to HTML elements.</article>
+		<article>CSS Rule consists of:
+			<ul>
+				<li>Selector - (Type of HTML tag) followed by an open and close curly brace. For example: "p { . . . }"</li>
+				<li>CSS Declaration - Has two parts, separated by a colon and ended with a semicolon (not required). 
+					<div>For example: "p { color: blue; }" </div>
+					Consists of:</li>
+				<ul>
+					<li>Property - a name predefined by CSS specification. For every property, there is a pre-determined amount of values</li>
+					<li>Value - a number or a word </li>
+				</ul>
+			</ul>
+		</article>
+		<article>Can have multiple declarations within a CSS rule.</article>
+		<article>Style Sheet - Collection of CSS Rules</article>
+		<article>The browser has preset styles to specific HTML elements, so it is your job to use CSS to reset/override these styles</article>
 	</section>
 </p>
 <div>
