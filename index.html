@@ -7,7 +7,7 @@
 	<style>
 		ul {
 			color: green;
-			font-size: 12px;
+			font-size: 13px;
 			font-family: monospace;
 		}
 		ol {
@@ -18,12 +18,16 @@
 		h1 {
 			color: black;
 			font-size: 36px;
+			font-weight: bolder;
 			text-align: center;
+			background-color: #d3d3d3;
+			border-radius: 50px;
 			font-family: monospace;
 		}
 		h2 {
 			color: royalblue;
 			font-size: 25px;
+			font-weight: bold;
 			font-family: monospace;
 			text-align: left;
 		}
@@ -33,12 +37,18 @@
 			font-family: monospace;
 		}
 
+		#logo {
+			display: block;
+      		margin: 0 auto;
+		}
+
 	</style>
 </head>
 <body>
 <h1>Coursera -- Test 1</h1>
 	<heading>These are my HTML notes from Coursera.</heading>
 <h2 id = "top">HTML & CSS Notes:</h2> 
+<img id = "logo" src = "https://miro.medium.com/v2/resize:fit:5120/1*l4xICbIIYlz1OTymWCoUTw.jpeg" width = 400px height = 200px alt = "HTML, CSS, and Javascript Logo">
 <div>
 	<h3>Table of Contents:</h3>
 	<p>
@@ -51,6 +61,7 @@
 		<a href = "#htmlLinkCreation"><div>Creating Links</div></a>
 		<a href = "#htmlImages"><div>Displaying Images</div></a>
 		<a href = "#cssIntro"><div>CSS Rules</div></a>
+		<a href = "#cssElementClassIdSelectors"><div>CSS Element, Class, and ID Selectors</div></a>
 		<a href = "#bottom"><div>To the Bottom:</div></a>
 
 	</p>
@@ -357,7 +368,41 @@
 		<article>The browser has preset styles to specific HTML elements, so it is your job to use CSS to reset/override these styles</article>
 	</section>
 </p><hr>
-<div>
+<p id = cssElementClassIdSelectors>
+	<h3> CSS Element, Class, & id Selectors </h3>
+	<section>
+		<article>CSS selectors are used to determine which HTML element, or set of elements, to apply the CSS declarations to.</article>
+		<article>There are 3 different types of selectors:
+			<ul>
+				<li>Element</li>
+				<li>Class</li>
+				<li>ID</li>
+			</ul>
+		</article>
+		<article>Element Selectors: p { . . . } 
+			<ul>
+				<li>Specifies the element name to be altered. </li>
+				<li>Only that type of tag will be altered based on the CSS declarations made.</li>
+			</ul>
+		</article>
+		<article>Class Selectors: .blue { . . . }
+			<ul>
+				<li>Specified with a "." and the name of the class. </li>
+				<li>Must add the "class" attribute, and set it equal to the desired class name, to any HTML tags that you want to be impacted by those CSS declarations.</li>
+				<li>When referring to/adding it to the HTML tags, you do not need to include the ".".</li>
+			</ul>
+		</article>
+		<article>ID Selectors #name { . . . }
+			<ul>
+				<li>Specified with a "#" and the name of the id </li>
+				<li>Only the HTML tag with that id will be altered with these CSS declarations </li>
+				<li>When referring to/adding it to the HTML tags, you do not need to include the "#".</li>
+			</ul>
+		</article>
+		<article>You can also group different types of selectors together using a comma. For example: div, .blue { color: blue; }</article>
+	</section>
+</p>
+<div><hr>
 	<h3><a name = "bottom">Bottom of the page</a></h3>
 	<p>
 		<a href = "#top">Back to the top:</a>
