@@ -36,10 +36,20 @@
 			font-size: 20px;
 			font-family: monospace;
 		}
+		section article {
+			color: #4f4e4d;
+		}
+		article > li {
+			color: #7b3f3a;
+		}
 
 		#logo {
 			display: block;
       		margin: 0 auto;
+		}
+
+		.highlight1{
+			background-color: #c3eac4;
 		}
 
 	</style>
@@ -50,7 +60,7 @@
 <h2 id = "top">HTML & CSS Notes:</h2> 
 <img id = "logo" src = "https://miro.medium.com/v2/resize:fit:5120/1*l4xICbIIYlz1OTymWCoUTw.jpeg" width = 400px height = 200px alt = "HTML, CSS, and Javascript Logo">
 <div>
-	<h3>Table of Contents:</h3>
+	<h3 id = "tableOfContents">Table of Contents:</h3>
 	<p>
 		<a href = "#htmlTags"><div>HTML Tags</div></a>
 		<a href = "#htmlStructure"><div>Basic HTML Document Structure</div></a>
@@ -62,8 +72,9 @@
 		<a href = "#htmlImages"><div>Displaying Images</div></a>
 		<a href = "#cssIntro"><div>CSS Rules</div></a>
 		<a href = "#cssElementClassIdSelectors"><div>CSS Element, Class, and ID Selectors</div></a>
+		<a href = "#cssCombiningSelectors"><div>Combining CSS Selectors</div></a>
+		<a href = "#cssPseudoClassSelectors"><div>Pseudo-Class Selectors</div></a>
 		<a href = "#bottom"><div>To the Bottom:</div></a>
-
 	</p>
 </div>
 <p id = "htmlTags"> <hr>
@@ -350,7 +361,7 @@
 <p id = cssIntro>
 	<h3> CSS Rules </h3>
 	<section>
-		<article>Associates CSS rules to HTML elements.</article>
+		<h4>Associate CSS rules to HTML elements.</h4>
 		<article>CSS Rule consists of:
 			<ul>
 				<li>Selector - (Type of HTML tag) followed by an open and close curly brace. For example: "p { . . . }"</li>
@@ -389,6 +400,7 @@
 			<ul>
 				<li>Specified with a "." and the name of the class. </li>
 				<li>Must add the "class" attribute, and set it equal to the desired class name, to any HTML tags that you want to be impacted by those CSS declarations.</li>
+				<li>A tag can have multiple classes applied simply by adding a space between the names of the classes within the HTML tag.</li>
 				<li>When referring to/adding it to the HTML tags, you do not need to include the ".".</li>
 			</ul>
 		</article>
@@ -400,6 +412,28 @@
 			</ul>
 		</article>
 		<article>You can also group different types of selectors together using a comma. For example: div, .blue { color: blue; }</article>
+	</section>
+</p><hr>
+<p id = "cssCombiningSelectors">
+	<h3>Combining CSS Selectors</h3>
+	<section>
+		<article>
+			Element + Class selector: 
+			<li>An element and a class selector separated by a ".". For example: p.big { . . . }.</li>
+			<li>Targets every element that has that specified attribute class. </li>
+			<li>Make sure that there is no space, or else it will mean something else.</li>
+		</article><br>
+		<article>
+			Child Selector: 
+			<li>A selector1 with a ">" and another selector2. For example: article > p { . . . }</li>
+			<li>It is read right to left, which targets every selector2 that is a <strong>direct</strong> child of selector1.</li>
+		</article><br>
+		<article>
+			Descendant Selector:
+			<li>A selector1 and a selector2 separated by a space. For example: article p { . . . }</li>
+			<li>Read right to left, which targets every selector2 that is within selector1.</li>
+		</article><br>
+		<article>Other selectors include: "Adjacent sibling selectors" (selector1&nbsp;+&nbsp;selector2) and "General sibling selectors" (selector1&nbsp;~&nbsp;selector2)&nbsp;.</article>
 	</section>
 </p>
 <div><hr>
