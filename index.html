@@ -3,82 +3,37 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<title>HTML Notes</title>
-	<style>
-		ul {
-			color: green;
-			font-size: 13px;
-			font-family: monospace;
-		}
-		ol {
-			color: rebeccapurple;
-			font-size: 12px;
-			font-family: monospace;
-		}
-		h1 {
-			color: black;
-			font-size: 36px;
-			font-weight: bolder;
-			text-align: center;
-			background-color: #d3d3d3;
-			border-radius: 50px;
-			font-family: monospace;
-		}
-		h2 {
-			color: royalblue;
-			font-size: 25px;
-			font-weight: bold;
-			font-family: monospace;
-			text-align: left;
-		}
-		h3 {
-			color: #ec7e35;
-			font-size: 20px;
-			font-family: monospace;
-		}
-		section article {
-			color: #4f4e4d;
-		}
-		article > li {
-			color: #7b3f3a;
-		}
-
-		#logo {
-			display: block;
-      		margin: 0 auto;
-		}
-
-		.highlight1{
-			background-color: #c3eac4;
-		}
-
-	</style>
 </head>
 <body>
-<h1 id ="top">Coursera -- Test 1</h1>
-	<heading>These are my HTML notes from Coursera.</heading>
-<h2 id ="title">HTML & CSS Notes:</h2> 
+<header id ="top">Coursera -- Test 1
 <img id = "logo" src = "https://miro.medium.com/v2/resize:fit:5120/1*l4xICbIIYlz1OTymWCoUTw.jpeg" width = 400px height = 200px alt = "HTML, CSS, and Javascript Logo">
-<div>
-	<h3 id = "tableOfContents">Table of Contents:</h3>
-	<p>
-		<a href = "#htmlTags"><div>HTML Tags</div></a>
-		<a href = "#htmlStructure"><div>Basic HTML Document Structure</div></a>
-		<a href = "#htmlContentModels"><div>HTML Content Models</div></a>
-		<a href = "#htmlElements"><div>Semantic HTML Elements</div></a>
-		<a href = "#htmlLists"><div>HTML Lists</div></a>
-		<a href = "#htmlCharacterEntityRef"><div>3 Characters You Should Always Escape</div></a>
-		<a href = "#htmlLinkCreation"><div>Creating Links</div></a>
-		<a href = "#htmlImages"><div>Displaying Images</div></a>
-		<a href = "#cssIntro"><div>CSS Rules</div></a>
-		<a href = "#cssElementClassIdSelectors"><div>CSS Element, Class, and ID Selectors</div></a>
-		<a href = "#cssCombiningSelectors"><div>Combining CSS Selectors</div></a>
-		<a href = "#cssPseudoClassSelectors"><div>Pseudo-Class Selectors</div></a>
-		<a href = "#bottom"><div>To the Bottom:</div></a>
-	</p>
-</div>
-<p id = "htmlTags"> <hr>
-	<h3>HTML Tags: </h3>
+</header>
+<h1 id ="title">HTML & CSS Notes:</h1> 
+<section>
+	<h2>Table of Contents:</h2>
+	<p id = "tableOfContents">
+		<ol>
+			<li><a href = "#htmlTags"><div>HTML Tags</div></a></li>
+			<li><a href = "#htmlStructure"><div>Basic HTML Document Structure</div></a></li>
+			<li><a href = "#htmlContentModels"><div>HTML Content Models</div></a></li>
+			<li><a href = "#htmlElements"><div>Semantic HTML Elements</div></a></li>
+			<li><a href = "#htmlLists"><div>HTML Lists</div></a></li>
+			<li><a href = "#htmlCharacterEntityRef"><div>3 Characters You Should Always Escape</div></a></li>
+			<li><a href = "#htmlLinkCreation"><div>Creating Links</div></a></li>
+			<li><a href = "#htmlImages"><div>Displaying Images</div></a></li>
+			<li><a href = "#cssIntro"><div>CSS Rules</div></a></li>
+			<li><a href = "#cssElementClassIdSelectors"><div>CSS Element, Class, and ID Selectors</div></a></li>
+			<li><a href = "#cssCombiningSelectors"><div>Combining CSS Selectors</div></a></li>
+			<li><a href = "#cssPseudoClassSelectors"><div>Pseudo-Class Selectors</div></a></li>
+			<li><a href = "#bottom"><div>To the Bottom:</div></a></li>
+		</ol>
+	</p><hr>
+</section><br>
+<section>
+<p id = "htmlTags"> 
+	<h2>HTML Tags: </h2>
 	Paragraph: "< p >" <br>
 	<ul>
 		<li> Must have an Opening tag, and usually a Closing tag, and surround some content.</li>
@@ -106,8 +61,10 @@
 	"Self-closing" tag: in other versions of HTML, there were "self-closing" tags that could be used as empty place holders to dynamically insert data later on. "< p/ >" <br><br>
 	However, in HTML5, "self-closing" is illegal. Instead, just have the opening and closing tags with no space in-between to create the same affect. "< p >< /p >" <br>
 </p> <hr>
+</section><br>
+<section>
 <p id = "htmlStructure"> 
-	<h3>Basic HTML Document Structure: </h3> 
+	<h2>Basic HTML Document Structure: </h2> 
 
 	"< !doctype html >" <br>
 	Every HTML page should begin with the "< !doctype html >" declaration. <br>
@@ -136,8 +93,10 @@
 
 	HTML is read from the top down sequentially by the browser. <br>
 </p><hr>
+</section><br>
+<section>
 <p id = "htmlContentModels">
-	<h3>HTML Content Models: </h3>
+	<h2>HTML Content Models: </h2>
 	Content Model -- the full behavior the browser applies to the elements within the content model, and which elements are allowed to be nested inside which elements. <br><br>
 
 	Generally split into 2 categories: 
@@ -169,8 +128,10 @@
 	The span tag stands for span. It is your most generic inline element.
 	<br><br>
 </p><hr>
+</section><br>
+<section>
 <p id = "htmlElements">
-	<h3>Semantic HTML Elements:</h3>
+	<h2>Semantic HTML Elements:</h2>
 	<div> Semantic -- relating to meaning in lnaguage or logic <br>
 	Semantic HTML Element -- an element that implies some meaning to the content </div>
 
@@ -182,30 +143,32 @@
 
 	<header>The following tags are all block-line elements.</header><br>
 
-	<section>"< header >" </section>
+	<div>"< header >" </div>
 	<article>Contains header information about the page. Perhaps logos, navigation, etc.</article><br>
 
-	<section>"< nav >" </section>
+	<div>"< nav >" </div>
 	<article>Usually contains links to different parts of the web site to navigate.</article><br>
 
-	<section>"< section >" </section>
+	<div>"< section >" </div>
 	<article>Acts like a div tag. Generally holds inline elements such as article tags.</article><br>
 
-	<section>"< article >" </section>
+	<div>"< article >" </div>
 	<article>Acts like a span tag. However, it can hold section tags.</article><br>
 
-	<section>"< aside >" </section>
+	<div>"< aside >" </div>
 	<article>Contains some information that is generally related to the main topic of the site.</article><br>
 
-	<section>"< footer >" </section>
+	<div>"< footer >" </div>
 	<article>Contains the footer information. Perhaps copyright and contact info.</article><br>
 
 	These types of semantic elements allow for more meaningful breakdowns of an html page. However they do not add much functionality when compared to "< div >" and "< span >" tags. 
 	<br><br>
 </p><hr>
+</section><br>
+<section>
 <p id = "htmlLists">
-	<h3>HTML Lists</h3>
-	<section>"< ul >"</section>
+	<h2>HTML Lists</h2>
+	<div>"< ul >"</div>
 	<article>Represents an unordered list tag. Every element within the ul tag is an "li" tag (list item).</article>
 	<article>Example: 
 		<ul>
@@ -221,8 +184,7 @@
 			<li>Pepto Bismol</li>
 		</ul>
 	</article>
-
-	<section>"< ol >"</section>
+	<div>"< ol >"</div>
 	<article>Represents an ordered list tag. Every element within the ul tag is an "li" tag (list item).</article>
 	<article>Example: 
 		<ol>
@@ -239,26 +201,36 @@
 		</ol>
 	</article>
 </p> <hr>
+</section><br>
+<section>
 <p id = "htmlCharacterEntityRef">
-	<h3> 3 Characters You Should Always Escape </h3>
-	<div>To let the computer differentiate which characters are part of the HTML syntax and which characters are actually part of the desired information.<div><br>
-	<section> " < " </section>
-	<article>Instead of the less than symbol use: "&lt;"</article>
-	<section> " > " </section>
-	<article>Instead of the less than symbol use: "&gt;"</article>
-	<section> " & " </section>
-	<article>Instead of the less than symbol use: "&amp;"</article>
+	<h2> 3 Characters You Should Always Escape </h2>
+	<div>To let the computer differentiate which characters are part of the HTML syntax and which characters are actually part of the desired information.</div><br>
+	<div> " < "
+		<article>Instead of the less than symbol use: "&lt;"</article>
+	</div>
+	<div> " > " 
+		<article>Instead of the less than symbol use: "&gt;"</article>
+	</div>
+	<div> " & "
+		<article>Instead of the less than symbol use: "&amp;"</article>
+	</div>
 	<br>
-	<h3> Other important HTML Character Entity References </h3>
-	<section> Copyright Symbol: </section>
-	<article>The copyright symbol can be found with: "&copy;"</article>
-	<section> Non-breaking Space </section>
-	<article>To add a non-breaking space (to prevent certain words from being split apart when viewing) use: "word1&nbsp;word2&nbsp;word3"</article>
-	<section> Quotes </section>
-	<article>To add quotes (useful when using other limited character sets) use: " &quot; "</article>
+	<h4> Other important HTML Character Entity References </h4>
+	<div> Copyright Symbol:
+		<article>The copyright symbol can be found with: "&copy;"</article>
+	</div>
+	<div> Non-breaking Space
+			<article>To add a non-breaking space (to prevent certain words from being split apart when viewing) use: "word1&nbsp;word2&nbsp;word3"</article>
+	</div>
+	<div> Quotes 
+			<article>To add quotes (useful when using other limited character sets) use: " &quot; "</article>
+	</div>
 </p> <hr>
+</section><br>
+<section>
 <p id = "htmlLinkCreation">
-	<h3> Creating Links </h3>
+	<h2> Creating Links </h2>
 	<article>To make links, you must first specify an anchor tag, "a" element (&lt;a&gt;) with an attribute of "href" which stands for hypertext reference. </article>
 	<ul>
 		<li>The value of href can either be a relative or an absolute URL.</li>
@@ -267,27 +239,27 @@
 	<article>You should also specify a "title" attribute for the a tag. This title attribute will be used to help visually impaired people get through the web page.</article>
 	<br>
 	<article>The content between the a tags are the actual information that you will be able to see in the web page and that you can click.</article>
-	<section>
+	<div>
 		<h4>Internal Links:</h4>
-		<section>
+		<div>
 			<article>You can have links inline.</article>
 			For Example:
 			<a href="htmlBasicStruct.html" title ="same dir link">
 			Linking to a file within the "test_site" folder on this machine.
 			</a>
-		</section>
+		</div>
 		<br>
 		<article>You can also have the link onto a new line by using a div tag around the content that you want to click. The reason why this works is because the a tag is actually both an inline and a block-level element.</article>
-		<section>
+		<div>
 			For Example:
 			<a href="htmlBasicStruct.html" title ="same dir link">
 				<div>Linking with DIV to a file within the "test_site" folder on this machine.</div>
 			</a>
-		</section>
-	</section>
-	<section>
+		</div>
+	</div>
+	<div>
 		<h4>External Links:</h4>
-		<section>
+		<div>
 			<article>The href values in external links usually begin with "http://" because the external links are usually hosted on a different domain other than your website.</article>
 			<article>Addition to the href and title attributes, a tags that lead to external links also have a "target" attribute.
 				<ui>
@@ -297,32 +269,35 @@
 			<br>
 			For Example:
 			<a href = "https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/kMmI7/lecture-9-creating-links" target = "_blank" title = "external Coursera link"><div>External link to the Coursera lecture about creating links.<div></a>
-	</section>
-	<section>
+	</div>
+	<div>
 		<h4>Fragment Identifiers:</h4>
-		<section>
+		<div>
 			<article>Fragment Identifiers create links that lead to specific sections of your website. </article>
-			<article>There are multiple ways to identify a section.
+			<article>There are multiple ways to identify a div.
 				<ul>
-					<li>You can have any tag that has an id with that section name.</li>
-					<li>You can create an anchor tag with a name attribute (named similarly to section names).</li>
+					<li>You can have any tag that has an id with that div name.</li>
+					<li>You can create an anchor tag with a name attribute (named similarly to div names).</li>
 				</ul>
 			However there are all referenced the same way: The href value must be a # symbol followed by the name of the id.
 			</article>
 			<article>For Example:
-				<a href = "#htmlTags" title = "section1"><div>1st Section</div></a>
-				<a href = "#htmlLinkCreation" title = "section7"><div>7th Section</div></a>
-		</section>
-	</section>
+				<a href = "#htmlTags" title = "section1"><div>1st div</div></a>
+				<a href = "#htmlLinkCreation" title = "section7"><div>7th div</div></a>
+			</article>
+		</div>
+	</div>
 </p><hr>
+</section><br>
+<section>
 <p id = htmlImages>
-	<h3>Displaying Images</h3>
-	 <section>
+	<h2>Displaying Images</h2>
+	 <div>
 	 	<h4>HTML Comments:</h4>
 	 	<article>To comment out lines of code in HTML use "&lt;!--" to start it and "-->" to close it.</article>
 	 	<!--This is an example of an HTML commented line.-->
-	 </section>
-	 <section>
+	 </div>
+	 <div>
 	 	<h4>HTML Images:</h4>
 	 	<article>Use the "img" tag (&lt;img&mt;) to display images. It is an inline element.</article>
 	 	<article>There are 4 important attributes you should include in an img tag</article>
@@ -350,17 +325,19 @@
 	 			</ul>
 	 		</li>
 	 	</ol>
-	 	<section>For Example (Internal Link):
+	 	<div>For Example (Internal Link):
 	 		<img src = "Totoro Image1.png" width = "468" height = "533" alt = "Image of Totoro">
-	 	</section>
-	 	<section>For Example (External Link):
+	 	</div>
+	 	<div>For Example (External Link):
 	 		<img src = "https://static.wixstatic.com/media/919372_e20bfc2f503a419ab3a31b145781297f~mv2.jpg/v1/fill/w_900,h_506,al_c,q_85/919372_e20bfc2f503a419ab3a31b145781297f~mv2.jpg" width = "450" height = "253" alt = "Image of Howl's Moving Castle">
-	 	</section>
-	</section>
+	 	</div>
+	</div>
 </p><hr>
+</section><br>
+<section>
 <p id = cssIntro>
-	<h3> CSS Rules </h3>
-	<section>
+	<h2> CSS Rules </h2>
+	<div>
 		<h4>Associate CSS rules to HTML elements.</h4>
 		<article>CSS Rule consists of:
 			<ul>
@@ -377,11 +354,13 @@
 		<article>Can have multiple declarations within a CSS rule.</article>
 		<article>Style Sheet - Collection of CSS Rules</article>
 		<article>The browser has preset styles to specific HTML elements, so it is your job to use CSS to reset/override these styles</article>
-	</section>
+	</div>
 </p><hr>
+</section><br>
+<section>
 <p id = cssElementClassIdSelectors>
-	<h3> CSS Element, Class, & id Selectors </h3>
-	<section>
+	<h2> CSS Element, Class, & id Selectors </h2>
+	<div>
 		<article>CSS selectors are used to determine which HTML element, or set of elements, to apply the CSS declarations to.</article>
 		<article>There are 3 different types of selectors:
 			<ul>
@@ -412,11 +391,13 @@
 			</ul>
 		</article>
 		<article>You can also group different types of selectors together using a comma. For example: div, .blue { color: blue; }</article>
-	</section>
+	</div>
 </p><hr>
+</section><br>
+<section>
 <p id = "cssCombiningSelectors">
-	<h3>Combining CSS Selectors</h3>
-	<section>
+	<h2>Combining CSS Selectors</h2>
+	<div>
 		<article>
 			Element + Class selector: 
 			<li>An element and a class selector separated by a ".". For example: p.big { . . . }.</li>
@@ -434,13 +415,15 @@
 			<li>Read right to left, which targets every selector2 that is within selector1.</li>
 		</article><br>
 		<article>Other selectors include: "Adjacent sibling selectors" (selector1&nbsp;+&nbsp;selector2) and "General sibling selectors" (selector1&nbsp;~&nbsp;selector2)&nbsp;.</article>
-	</section>
+	</div>
 </p><hr>
+</section><br>
+<section>
 <p id = "cssPseudoClassSelectors">
-	<h3>CSS Pseudo-Class Selectors</h3>
-	<section>
+	<h2>CSS Pseudo-Class Selectors</h2>
+	<div>
 		<article>Pseudo-class selectors: 
-			<li>Address targeting only the structures that can be tareted by simple combinations of regular selectors, or targeting the ability to style based on user interaction with the page.
+			<li>Address targeting only the structures that can be tareted by simple combinations of regular selectors, or targeting the ability to style based on user interaction with the page.</li>
 			<li>Defined by selector1 with a ":" and a predefined pseudo-class name.</li>
 		</article><br>
 		<article>5 commonly used Pseudo-class selectors:
@@ -450,13 +433,14 @@
 			<li>:active</li>
 			<li>:nth-child(...)</li>
 		</article>
-	</section>
-</p>
-<div><hr>
-	<h3><a name = "bottom">Bottom of the page</a></h3>
+	</div>
+</p><hr>
+</section><br>
+<section>
+	<h2><a name = "bottom">Bottom of the page</a></h2>
 	<p>
 		<a href = "#top">Back to the top:</a>
 	</p>
-</div>
+</section>
 </body>
 </html>
